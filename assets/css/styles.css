@@ -356,6 +356,13 @@ Hero section
     min-height: calc(40vh - 4rem);
 }
 
+/*#hero-title{*/
+/*    width: 16.6875rem;*/
+/*    font-size: 1.625rem;*/
+/*    font-weight: 700;*/
+/*    line-height: 150%;*/
+/*}*/
+
 .hero-image {
     background: url("../images/hero-background.png") lightgray 50% / cover no-repeat;
     height: 18rem;
@@ -366,12 +373,14 @@ Hero section
     height: 16.3125rem;
     display: grid;
     place-items: center;
+    line-height: 150%;
 }
 
 .hero-info h2 {
     width: 16.6875rem;
     font-size: 1.625rem;
     font-weight: 700;
+    line-height: 150%;
 }
 
 .hero-info p {
@@ -394,18 +403,17 @@ Hero section
         display: none;
     }
 
-
     .hero .pc {
         display: block;
         position: relative;
-        top: -17rem;
 
     }
 
     .hero .pc h2 {
         max-width: 26rem;
-        font-size: 2.25rem;
+        font-size: 1.75rem;
         font-weight: 700;
+        line-height: 150%;
     }
 
     .hero .pc p {
@@ -428,13 +436,48 @@ Hero section
         "left right";
     }
 
-    .hero-info h2 {
+    .hero .hero-info h2 {
         font-size: 2.25rem;
+        line-height: normal;
         font-weight: 700;
     }
 
+    #hero-title{
+        position: relative;
+        top: -200px;
+    }
+
+}
+@media screen and (min-width: 1150px) and (max-width: 1350px){
+    #hero-title{
+        top: -330px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .hero .pc {
+        display: block;
+        position: relative;
+        /*top: -19rem;*/
+    }
+
+    .hero .pc h2 {
+        max-width: 26rem;
+        line-height: normal;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    #hero-title{
+        top: -200px;
+    }
 }
 
+@media screen and (min-width: 1400px){
+     #hero-title{
+        top: -200px;
+    }
+
+}
 /*------------------
 Checkup section
 -------------------*/
