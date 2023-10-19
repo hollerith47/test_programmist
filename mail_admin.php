@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $subjet = "Записаться на прием";
     $message = "Пользователь запросил встречу";
 
-    $title = "From: Rocket Business Website";
+    $title = "From: Rocket Business Website by Герман Дитуасилуа";
 
     if (mail($recever, $subjet, $message, $title)){
         echo "Электронное письмо успешно отправлено. Администратор будет уведомлен о вашем запросе";
