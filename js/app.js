@@ -1,18 +1,6 @@
-// const navbar = document.querySelector("#nav");
 const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
-// const navLinks = document.querySelector("#nav-links");
 const sidebar = document.querySelector("#sidebar");
-
-// window.addEventListener("scroll", function () {
-//     if (window.pageYOffset > 80) {
-//         navbar.classList.add("navbar-fixed");
-//         navLinks.classList.add("nav-links-container-fixed")
-//     } else {
-//         navbar.classList.remove("navbar-fixed");
-//         navLinks.classList.remove("nav-links-container-fixed")
-//     }
-// });
 
 navBtn.addEventListener("click", function(){
     sidebar.classList.add("show-sidebar");
@@ -54,7 +42,6 @@ function getNextSlide(){
 function getPreviousSlide(){
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     showSlide(currentSlide);
-    // console.log(currentSlide);
     currentSlideContenair.innerHTML = currentSlide + 1;
 
 }

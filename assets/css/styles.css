@@ -6,7 +6,6 @@
 
 /*variables*/
 :root {
-    /* primary/main color */
     --bg-primary-1: #1FA181;
     --bg-primary-2: #0DBC91;
     --clr-primary: #364844;
@@ -86,11 +85,9 @@ li {
 }
 
 .container {
-    /*max-width: 21.2475rem;*/
     padding-left: 1.06rem;
     padding-right: 1.13rem;
     margin: 0 auto;
-    /*background: aquamarine;*/
 }
 
 @media screen and (min-width: 992px) {
@@ -115,7 +112,6 @@ Header
 
 .nav-header {
     width: 100%;
-    /*max-width: 1400px;*/
     margin: 0 auto;
 }
 
@@ -130,7 +126,6 @@ Header
     position: relative;
     padding-bottom: 1.42rem;
     padding-top: 1.50rem;
-    /*padding-left: -6.06rem;*/
 }
 
 .nav-header {
@@ -149,7 +144,6 @@ Header
 .nav-btn, .logo, .close-btn {
     background: transparent;
     border: none;
-    /*text-align: left;*/
     cursor: pointer;
 }
 
@@ -213,12 +207,7 @@ Header
 @media screen and (min-width: 992px) {
     #nav {
         height: 4.1875rem;
-        /*width: 100%;*/
         background: var(--clr-white);
-        /*display: grid;*/
-        /*position: relative;*/
-        /*align-items: center;*/
-        /*transition: var(--transition);*/
     }
 
     .logo .brand {
@@ -229,13 +218,6 @@ Header
         background: var(--bg-primary-2);
         color: var(--clr-white);
     }
-
-    /*.navbar-fixed, .nav-links-container-fixed {*/
-    /*    width: 100vw;*/
-    /*    !*max-width: var(--max-width);*!*/
-    /*    !*margin: 0 auto;*!*/
-    /*}*/
-
 
     .nav-header {
         grid-template-columns: 1fr 1fr;
@@ -439,8 +421,6 @@ Hero section
     }
 
     .hero-center {
-        /*max-height: 33.3125rem;*/
-        /*max-width: 120rem;*/
         position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -449,20 +429,10 @@ Hero section
     }
 
     .hero-info h2 {
-        /*max-width: 26rem;*/
         font-size: 2.25rem;
         font-weight: 700;
-        /*max-height: 8.8125rem;*/
     }
 
-    .hero-info div h2 {
-        /*max-width: ;*/
-        /*font-size: 2.25rem;*/
-    }
-
-    .hero-info div p {
-        /*max-width: 22.9375rem;*/
-    }
 }
 
 /*------------------
@@ -515,12 +485,10 @@ Checkup section
 }
 
 .check-up-list {
-    /*padding-left: 1rem;*/
     list-style: none;
     min-height: 7.75rem;
     min-width: 16.9375rem;
     display: grid;
-    /*padding-bottom: 1.06rem;*/
 }
 
 .check-up-list li {
@@ -607,13 +575,11 @@ Checkup section
 .sliders .arrow svg:hover {
     fill: var(--bg-primary-3);
     stroke: var(--bg-primary-3);
-    /*background: red;*/
 }
 
 @media screen and (min-width: 992px) {
     .check-up {
         margin-top: -7.06rem;
-        /*margin-bottom: 5.75rem;*/
     }
     .check-up-img{
         background: url("../images/doctor-working-table_pc.png") lightgray 50% / cover no-repeat ;
@@ -631,7 +597,6 @@ Checkup section
     }
 
     .check-up-center .check-up-img{
-        /*width: 30.31rem;*/
         flex: 1.5;
     }
     .check-up-center .check-up-info{
@@ -689,8 +654,6 @@ footer
 
 .footer-header, .footer-links {
     padding-top: 2.62rem;
-    /*padding-left: 1.06rem;*/
-    /*padding-right: 1.06rem;*/
     display: flex;
     justify-content: space-between;
 }
@@ -737,9 +700,6 @@ footer
         height: 1.68131rem;
     }
 
-    /*.container {*/
-    /*    padding: 0 10rem;*/
-    /*}*/
     .footer-header {
         height: 9rem;
         padding-top: 0;
