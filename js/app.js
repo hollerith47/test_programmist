@@ -67,12 +67,11 @@ form.addEventListener("submit", function (e) {
         .then(res => res.text())
         .then(data => {
             popupMessage.textContent = data;
-            popup.style.display = "block";
-            popupBg.style.display = "block";
+
 
             setTimeout(function () {
-                popup.style.display = "none";
-                popupBg.style.display = "none";
+                popup.style.display = "block";
+                popupBg.style.display = "block";
             }, 5000)
         })
         .catch(error => {
