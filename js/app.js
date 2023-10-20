@@ -73,7 +73,7 @@ form.addEventListener("submit", function (e) {
             setTimeout(function () {
                 popup.style.display = "none";
                 popupBg.style.display = "none";
-            })
+            }, 5000)
         })
         .catch(error => {
             console.error("error occurred", error);
