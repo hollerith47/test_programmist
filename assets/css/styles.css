@@ -780,6 +780,16 @@ footer
 /*----------------------
 POP-UP
 -----------------------*/
+.popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Couleur de fond semi-transparente */
+    display: none;
+    z-index: 998;
+}
 .popup {
     display: none;
     position: fixed;
@@ -791,4 +801,6 @@ POP-UP
     padding: 20px;
     text-align: center;
     z-index: 999;
+    width: 10rem;
+    height: 5rem;
 }

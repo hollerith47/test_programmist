@@ -2,13 +2,13 @@ const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
 
-navBtn.addEventListener("click", function(){
+navBtn.addEventListener("click", function () {
     sidebar.classList.add("show-sidebar");
     closeBtn.classList.add("show-close");
     navBtn.classList.add("close-burger");
 })
 
-closeBtn.addEventListener("click", function(){
+closeBtn.addEventListener("click", function () {
     sidebar.classList.remove("show-sidebar");
     closeBtn.classList.remove("show-close");
     navBtn.classList.remove("close-burger");
@@ -21,8 +21,8 @@ const previousSlide = document.querySelector("#previous-slide");
 const currentSlideContenair = document.querySelector("#currentSlide")
 let currentSlide = 0;
 
-function showSlide(index){
-    slides.forEach((slide)=>{
+function showSlide(index) {
+    slides.forEach((slide) => {
         slide.style.opacity = 0;
         slide.style.display = 'none';
     });
@@ -32,14 +32,14 @@ function showSlide(index){
 
 showSlide(currentSlide);
 
-function getNextSlide(){
+function getNextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
     showSlide(currentSlide);
     currentSlideContenair.innerHTML = currentSlide + 1;
     console.log(currentSlide)
 }
 
-function getPreviousSlide(){
+function getPreviousSlide() {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     showSlide(currentSlide);
     currentSlideContenair.innerHTML = currentSlide + 1;
@@ -53,10 +53,11 @@ previousSlide.addEventListener('click', getPreviousSlide);
 // pop-up
 
 const form = document.querySelector("form");
-const popup = document.querySelector("#popup")
-const popupMessage = document.querySelector("#popup-message")
+const popup = document.querySelector("#popup");
+const popupMessage = document.querySelector("#popup-message");
+const popupBg = document.querySelector("#popup-bg")
 
-form.addEventListener("submit", function (e){
+form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     fetch(form.action, {
@@ -66,9 +67,15 @@ form.addEventListener("submit", function (e){
         .then(res => res.text())
         .then(data => {
             popupMessage.textContent = data;
-            popup.style.display = "block"
+            popup.style.display = "block";
+            popupBg.style.display = "block";
+
+            setTimeout(function () {
+                popup.style.display = "none";
+                popupBg.style.display = "none";
+            })
         })
-        .catch(error =>{
+        .catch(error => {
             console.error("error occurred", error);
         })
 })
