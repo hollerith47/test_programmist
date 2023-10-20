@@ -52,7 +52,7 @@ previousSlide.addEventListener('click', getPreviousSlide);
 
 // pop-up
 
-const form = document.querySelector("form");
+const form = document.querySelectorAll("form");
 const popup = document.querySelector("#popup");
 const popupMessage = document.querySelector("#popup-message");
 const popupBg = document.querySelector("#popup-bg")
