@@ -442,18 +442,20 @@ Hero section
         font-weight: 700;
     }
 
-    #hero-title{
+    #hero-title {
         position: relative;
         top: -200px;
     }
 
 }
-@media screen and (min-width: 1150px) and (max-width: 1350px){
-    #hero-title{
+
+@media screen and (min-width: 1150px) and (max-width: 1350px) {
+    #hero-title {
         top: -330px;
     }
 }
-@media screen and (min-width: 1200px){
+
+@media screen and (min-width: 1200px) {
     .hero .pc {
         display: block;
         position: relative;
@@ -467,17 +469,18 @@ Hero section
         font-weight: 700;
     }
 
-    #hero-title{
+    #hero-title {
         top: -200px;
     }
 }
 
-@media screen and (min-width: 1400px){
-     #hero-title{
+@media screen and (min-width: 1400px) {
+    #hero-title {
         top: -200px;
     }
 
 }
+
 /*------------------
 Checkup section
 -------------------*/
@@ -599,7 +602,7 @@ Checkup section
     display: none;
 }
 
-.collage{
+.collage {
     display: none;
 }
 
@@ -624,31 +627,33 @@ Checkup section
     .check-up {
         margin-top: -7.06rem;
     }
-    .check-up-img{
-        background: url("../images/doctor-working-table_pc.png") lightgray 50% / cover no-repeat ;
+
+    .check-up-img {
+        background: url("../images/doctor-working-table_pc.png") lightgray 50% / cover no-repeat;
 
     }
 
-    .check-up-info{
+    .check-up-info {
         top: 0;
     }
 
 
-    .check-up-center .clip-path-content{
+    .check-up-center .clip-path-content {
         display: flex;
         flex-direction: row-reverse;
     }
 
-    .check-up-center .check-up-img{
+    .check-up-center .check-up-img {
         flex: 1.5;
     }
-    .check-up-center .check-up-info{
+
+    .check-up-center .check-up-info {
         width: 30.38rem;
         flex: 1;
 
     }
 
-    .check-up-center .collage{
+    .check-up-center .collage {
         background: #E2F0EF;
         display: block;
         height: 30rem;
@@ -661,7 +666,8 @@ Checkup section
     .check-up-img .table-mobile {
         display: none;
     }
-    .check-up-info{
+
+    .check-up-info {
         padding-top: 3.32rem;
         padding-left: 3.94rem;
         padding-bottom: 3.5rem;
@@ -768,4 +774,21 @@ footer
         min-width: 2.1875rem;
         min-height: 2.1875rem;;
     }
+}
+
+
+/*----------------------
+POP-UP
+-----------------------*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    z-index: 999;
 }

@@ -49,3 +49,27 @@ function getPreviousSlide(){
 nextSlide.addEventListener('click', getNextSlide);
 previousSlide.addEventListener('click', getPreviousSlide);
 
+
+// pop-up
+
+const form = document.querySelector("form");
+const popup = document.querySelector("#popup")
+const popupMessage = document.querySelector("#popup-message")
+
+form.addEventListener("submit", function (e){
+    e.preventDefault();
+
+    fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+    })
+        .then(res => res.text())
+        .then(data => {
+            popupMessage.textContent = data;
+            popup.style.display = "block"
+        })
+        .catch(error =>{
+            console.error("error occurred", error);
+        })
+})
+
